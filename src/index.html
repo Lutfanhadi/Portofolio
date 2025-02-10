@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html class="scroll-smooth scroll-p-[100px]" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+   <body class="font-inter md:w-[1000px] lg:w-[1348px] mx-auto">
+    <nav class="sticky top-0 z-10 bg-white">
+      <div class="flex items-center justify-between md:mx-[70px] lg:mx-[112px] py-4">
+        <div>
+          <h1 class="text-bold md:text-[28px] lg:text-[30px]">Lutfan Hadi</h1>
+        </div>
+        <div class="flex items-center">
+          <ul
+            class="flex items-center gap-6 font-medium border-r-2 border-slate-300 pr-[24px] py-[2px] md:text-[14px] lg:text-[16px]"
+          >
+            <li>
+              <a class="text-gray-600 hover:text-gray-900" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-900" href="#about"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-900" href="#work">Work</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-900" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <svg
+            class="ml-[22px] hover:bg-slate-700 hover:rounded-full cursor-pointer"
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 9C16.8065 10.1935 16.136 11.8122 16.136 13.5C16.136 15.1878 16.8065 16.8065 18 18C19.1935 19.1935 20.8122 19.864 22.5 19.864C24.1878 19.864 25.8065 19.1935 27 18C27 19.78 26.4722 21.5201 25.4832 23.0001C24.4943 24.4802 23.0887 25.6337 21.4442 26.3149C19.7996 26.9961 17.99 27.1743 16.2442 26.8271C14.4984 26.4798 12.8947 25.6226 11.636 24.364C10.3774 23.1053 9.5202 21.5016 9.17294 19.7558C8.82567 18.01 9.0039 16.2004 9.68509 14.5558C10.3663 12.9113 11.5198 11.5057 12.9999 10.5168C14.4799 9.52784 16.22 9 18 9Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M25 9V13"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M27 11H23"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <button
+            class="ml-[22px] bg-gray-900 px-4 py-1.5 hover:bg-gray-700 rounded-xl text-gray-50 md:text-[14px] lg:text-[16px]"
+          >
+            Download CV
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- home -->
+      <section id="home" class="h-[552px] md:mx-[70px] lg:mx-[112px]">
+        <div class="flex justify-between pt-[96px]">
+          <div>
+            <h1 class="font-bold md:text-[35px] lg:text-[40px]">Hi, I’m Lutfan Hadi👋</h1>
+            <h1 class="font-bold md:text-[35px] lg:text-[40px]">Frontend Developer</h1>
+            <p class=" mt-[8px] text-justify md:w-[460px] md:text-[14px] md:leading-6 lg:w-[35rem] lg:text-[16px] lg:leading-7">
+              Saya seorang frontend developer yang berfokus menciptakan
+              pengalaman digital yang cepat, responsif, menarik secara visual,
+              dan mudah diakses. Dengan keahlian dalam HTML, CSS, dan
+              JavaScript, saya menghadirkan desain yang tidak hanya estetis
+              tetapi juga fungsional.
+            </p>
+
+            <div class="flex gap-1 mt-[30px]">
+              <a href="https://github.com/Lutfanhadi">
+                <svg
+                  class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/lutfan-hadi/">
+                <svg
+                  class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/lutfanhadi05/">
+                <svg
+                  class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="relative mt-[25px] bg-gray-200 md:w-[260px] md:h-[300px] lg:w-[280px] lg:h-[320px]">
+            <div
+              class="absolute bg-white bottom-[40px] right-[40px] md:w-[260px] md:h-[300px] lg:w-[280px] lg:h-[320px]"
+            >
+              <img
+                class="p-[10px]"
+                src="./assets/img/img-porto.png"
+                alt="gambar biodata portofolio"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me -->
+      <section id="about" class="bg-gray-50 md:h-[892px] lg:h-[822px]">
+        <div class="mt-[96px] md:mx-[70px] lg:mx-[112px]">
+          <div class="pt-[96px]">
+            <h1
+              class="py-[4px] px-[20px] font-medium mx-auto rounded-[12px] w-fit bg-gray-200 md:text-[14px] lg:text-[14px]"
+            >
+              About me
+            </h1>
+          </div>
+          <div class="pt-[48px] flex justify-between h-[600px]">
+            <div class="relative mt-[50px] bg-gray-200 md:w-[360px] md:h-[440px] lg:w-[400px] lg:h-[480px]">
+              <div
+                class="absolute bottom-[40px] left-[40px] bg-white md:w-[360px] md:h-[440px] lg:w-[400px] lg:h-[480px]"
+              >
+                <img
+                  class="p-[10px] md:w-[360px] md:h-[440px] lg:w-[400px] lg:h-[480px]"
+                  src="./assets/img/img-aboutme.png"
+                  alt="gambar about me"
+                />
+              </div>
+            </div>
+            <div class="md:w-[400px] lg:w-[584px]">
+              <h1 class="font-semibold mb-[24px] md:text-[28px] lg:text-[30px]">
+                Curious about me? Here you have it:
+              </h1>
+              <div class="flex flex-col gap-[16px] text-justify md:text-[14px] md:leading-6 lg:text-[16px] lg:leading-7">
+                <p>
+                  Saya adalah seorang mahasiswa di STMIK IKMI Cirebon yang
+                  memiliki minat besar dalam pengembangan antarmuka pengguna
+                  (UI) dan pengalaman pengguna (UX) untuk aplikasi web. Dengan
+                  fokus pada Frontend Development, saya terus membangun keahlian
+                  dalam pemrograman, desain responsif, dan optimalisasi performa
+                  antarmuka.
+                </p>
+                <p>
+                  Saat ini, saya mendalami pengembangan aplikasi berbasis web
+                  menggunakan teknologi seperti HTML, CSS, JavaScript, Tailwind
+                  CSS, dan kerangka kerja modern lainnya. Saya juga memiliki
+                  kemampuan dalam mengintegrasikan antarmuka dengan backend
+                  untuk menciptakan aplikasi yang fungsional dan menarik.
+                </p>
+                <p>
+                  Sebagai mahasiswa yang proaktif, saya selalu mencari peluang
+                  untuk belajar, berinovasi, dan berkontribusi pada
+                  proyek-proyek yang dapat memberikan pengalaman nyata dalam
+                  dunia teknologi informasi. Saya terbuka untuk kolaborasi,
+                  magang, atau peluang kerja sama lainnya di bidang pengembangan
+                  frontend.
+                </p>
+                <p>
+                  Mari terhubung untuk berbagi wawasan dan menciptakan inovasi bersama!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section>
+        <div class="mt-[96px] h-[250px] md:mx-[70px] lg:mx-[112px]">
+          <div class="text-center mb-[48px]">
+            <h1
+              class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] md:text-[14px] lg:text-[14px]"
+            >
+              skill
+            </h1>
+            <p class="text-normal md:text-[18px] lg:text-[20px]">
+              The skills, tools and technologies I am really good at:
+            </p>
+          </div>
+          <div
+            class="flex justify-center font-normal text-center md:text-[14px] md:gap-[40px] lg:text-[18px] lg:gap-[60px]"
+          >
+            <div>
+              <svg
+                class="md:w-[80px] lg:w-[100px]"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#E65100"
+                  d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                ></path>
+                <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path
+                  fill="#FFF"
+                  d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
+                ></path>
+                <path
+                  fill="#EEE"
+                  d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
+                ></path>
+              </svg>
+              <h1>Html 5</h1>
+            </div>
+            <div>
+              <svg
+                class="md:w-[80px] lg:w-[100px]"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#0277BD"
+                  d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                ></path>
+                <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path
+                  fill="#FFF"
+                  d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
+                ></path>
+                <path
+                  fill="#EEE"
+                  d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
+                ></path>
+              </svg>
+              <h1>Css</h1>
+            </div>
+            <div>
+              <svg
+                class="md:w-[80px] lg:w-[100px]"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path fill="#f7df1e" d="M6,42V6h36v36H6z"></path>
+                <path
+                  fill="#000001"
+                  d="M29.538,32.947c0.692,1.124,1.444,2.201,3.037,2.201c1.338,0,2.04-0.665,2.04-1.585 c0-1.101-0.726-1.492-2.198-2.133l-0.807-0.344c-2.329-0.988-3.878-2.226-3.878-4.841c0-2.41,1.845-4.244,4.728-4.244 c2.053,0,3.528,0.711,4.592,2.573l-2.514,1.607c-0.553-0.988-1.151-1.377-2.078-1.377c-0.946,0-1.545,0.597-1.545,1.377 c0,0.964,0.6,1.354,1.985,1.951l0.807,0.344C36.452,29.645,38,30.839,38,33.523C38,36.415,35.716,38,32.65,38 c-2.999,0-4.702-1.505-5.65-3.368L29.538,32.947z M17.952,33.029c0.506,0.906,1.275,1.603,2.381,1.603 c1.058,0,1.667-0.418,1.667-2.043V22h3.333v11.101c0,3.367-1.953,4.899-4.805,4.899c-2.577,0-4.437-1.746-5.195-3.368 L17.952,33.029z"
+                ></path>
+              </svg>
+              <h1>Javascript</h1>
+            </div>
+            <div>
+              <svg
+                class="md:w-[80px] lg:w-[100px]"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#00acc1"
+                  d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
+                ></path>
+              </svg>
+              <h1>Tailwindcss</h1>
+            </div>
+            <div>
+              <svg
+                class="md:w-[80px] lg:w-[100px]"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#e64a19"
+                  d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"
+                ></path>
+                <path
+                  fill="#7c4dff"
+                  d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"
+                ></path>
+                <path
+                  fill="#66bb6a"
+                  d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"
+                ></path>
+                <path
+                  fill="#ff7043"
+                  d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"
+                ></path>
+                <circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+              </svg>
+              <h1>Figma</h1>
+            </div>
+            <div>
+              <svg
+                class="md:w-[80px] lg:w-[100px]"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#F4511E"
+                  d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"
+                ></path>
+              </svg>
+              <h1>Git</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section id="work" class="bg-gray-50 md:h-[1400px] lg:h-[1600px]">
+        <div class="mt-[96px] md:mx-[70px] lg:mx-[112px]">
+          <div class="text-center mb-[48px] pt-[98px]">
+            <h1
+              class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] md:text-[14px] lg:text-[14px]"
+            >
+              Work
+            </h1>
+            <p class="text-normal md:text-[18px] lg:text-[20px]">
+              Some of the noteworthy projects I have built:
+            </p>
+          </div>
+
+          <div
+            class="flex justify-between bg-white rounded-[12px] drop-shadow-md md:h-[305px] md:p-[40px] lg:h-[380px] lg:p-[48px]"
+          >
+            <div>
+              <img
+                class="rounded-[12px] md:w-[370px] lg:w-[480px]"
+                src="./assets/img/img-work1.png"
+                alt="gambar proyek 1"
+              />
+            </div>
+            <div class="md:w-[370px] lg:w-[480px]">
+              <h1 class="font-semibold md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]">Edufree</h1>
+              <p class="font-normal text-justify md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam deserunt aliquam accusamus totam laboriosam doloremque,
+                voluptatem iure natus exercitationem quibusdam.
+              </p>
+              <div class="flex gap-[8px]">
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                >
+                  Html
+                </p>
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                >
+                  Css
+                </p>
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                >
+                  Tailwindcss
+                </p>
+              </div>
+              <div>
+                <a href="https://lutfanhadi.github.io/Web-Edufree/">
+                  <svg
+                    class="w-[24px] cursor-pointer md:mt-0 lg:mt-[30px]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-between bg-white rounded-[12px] drop-shadow-md mt-[48px] md:h-[305px] md:p-[40px] lg:h-[380px] lg:p-[48px]"
+          >
+            <div class="md:w-[370px] lg:w-[480px]">
+              <h1 class="font-semibold md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]">Edufree</h1>
+              <p class="font-normal text-justify md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam deserunt aliquam accusamus totam laboriosam doloremque,
+                voluptatem iure natus exercitationem quibusdam.
+              </p>
+              <div class="flex gap-[8px]">
+                <p
+                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px]"
+                >
+                  Html
+                </p>
+                <p
+                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px]"
+                >
+                  Css
+                </p>
+                <p
+                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px]"
+                >
+                  Tailwindcss
+                </p>
+              </div>
+              <div>
+                <a href="">
+                  <svg
+                    class="w-[24px] cursor-pointer md:mt-0 lg:mt-[30px]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                class="rounded-[12px] md:w-[370px] lg:w-[480px]"
+                src="./assets/img/img-work1.png"
+                alt="gambar proyek 2"
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex justify-between bg-white rounded-[12px] mt-[48px] drop-shadow-md md:h-[305px] md:p-[40px] lg:h-[380px] lg:p-[48px]"
+          >
+            <div>
+              <img
+                class="rounded-[12px] md:w-[370px] lg:w-[480px]"
+                src="./assets/img/img-work1.png"
+                alt="gambar proyek 1"
+              />
+            </div>
+            <div class="md:w-[370px] lg:w-[480px]">
+              <h1 class="font-semibold md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]">Edufree</h1>
+              <p class="font-normal text-justify md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam deserunt aliquam accusamus totam laboriosam doloremque,
+                voluptatem iure natus exercitationem quibusdam.
+              </p>
+              <div class="flex gap-[8px]">
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                >
+                  Html
+                </p>
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                >
+                  Css
+                </p>
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                >
+                  Tailwindcss
+                </p>
+              </div>
+              <div>
+                <a href="">
+                  <svg
+                    class="w-[24px] cursor-pointer md:mt-0 lg:mt-[30px]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section id="contact">
+        <div class="text-center mt-[96px]">
+          <h1
+            class="mb-[16px] font-medium py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] md:text-[14px] lg:text-[14px]"
+          >
+            Get in touch
+          </h1>
+          <p
+            class="w-[576px] mx-auto mb-[48px] font-normal md:text-[18px] md:leading-6 lg:text-[20px] lg:leading-7 "
+          >
+            What’sGet in touch next? Feel free to reach out to me if you're
+            looking for a developer, have a query, or simply want to connect.
+          </p>
+          <div class="flex items-center gap-[18px] justify-center mb-[16px]">
+            <svg
+              class="md:w-[24px] lg:w-[27px]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"
+              ></path>
+            </svg>
+            <p class="font-semibold md:text-[28px] lg:text-[30px]">lutfanhadi03@gmail.com</p>
+          </div>
+          <div class="flex items-center gap-[18px] justify-center mb-[48px]">
+            <svg
+              class="md:w-[27px] lg:w-[30px]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"
+              ></path>
+            </svg>
+            <p class="font-semibold md:text-[28px] lg:text-[30px]">+62 895357853685</p>
+          </div>
+          <p class="mb-[8px] font-normal md:text-[14px] lg:text-[16px]">
+            You may also find me on these platforms!
+          </p>
+          <div class="flex items-center justify-center gap-1 mb-[96px]">
+            <a href="https://github.com/Lutfanhadi">
+              <svg
+                class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/lutfan-hadi/">
+              <svg
+                class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/lutfanhadi05/">
+              <svg
+                class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h1 class="font-normal bg-gray-50 text-center md:text-[12px] md:py-[20px] lg:text-[14px] lg:py-[24px]">
+        &copy;Copyright 2025. All Rights Reserved
+      </h1>
+    </footer>
+  </body>
+</html>
