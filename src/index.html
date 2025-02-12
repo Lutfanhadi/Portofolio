@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web portofolio</title>
+    <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,35 +14,55 @@
       rel="stylesheet"
     />
   </head>
-   <body class="font-inter md:w-[1000px] lg:w-[1348px] mx-auto">
-    <nav class="sticky top-0 z-10 bg-white">
-      <div class="flex items-center justify-between md:mx-[70px] lg:mx-[112px] py-4">
+     <body
+    id="containerDarkMode"
+    class="font-inter w-[500px] md:w-[1000px] lg:w-[1349px] mx-auto"
+  >
+    <nav id="containerNav" class="sticky top-0 z-10 bg-white card1">
+      <div
+        class="flex items-center justify-between py-4 mx-[20px] md:mx-[70px] lg:mx-[112px]"
+      >
         <div>
-          <h1 class="text-bold md:text-[28px] lg:text-[30px]">Lutfan Hadi</h1>
+          <h1 class="text-bold text-[30px] md:text-[28px] lg:text-[30px] text">
+            Lutfan Hadi
+          </h1>
         </div>
         <div class="flex items-center">
           <ul
-            class="flex items-center gap-6 font-medium border-r-2 border-slate-300 pr-[24px] py-[2px] md:text-[14px] lg:text-[16px]"
+            class="items-center gap-6 font-medium border-r-2 border-gray-200 pr-[24px] py-[2px] hidden md:flex md:text-[14px] lg:flex lg:text-[16px] text"
           >
             <li>
-              <a class="text-gray-600 hover:text-gray-900" href="#home">Home</a>
+              <a
+                class="text-gray-600 dark:hover:text-black"
+                href="#home"
+                >Home</a
+              >
             </li>
             <li>
-              <a class="text-gray-600 hover:text-gray-900" href="#about"
+              <a
+                class="text-gray-600 dark:hover:text-black"
+                href="#about"
                 >About Me</a
               >
             </li>
             <li>
-              <a class="text-gray-600 hover:text-gray-900" href="#work">Work</a>
+              <a
+                class="text-gray-600 dark:hover:text-black"
+                href="#work"
+                >Work</a
+              >
             </li>
             <li>
-              <a class="text-gray-600 hover:text-gray-900" href="#contact"
+              <a
+                class="text-gray-600 dark:hover:text-black"
+                href="#contact"
                 >Contact</a
               >
             </li>
           </ul>
           <svg
-            class="ml-[22px] hover:bg-slate-700 hover:rounded-full cursor-pointer"
+            id="toggleDarkMode"
+            class="ml-[22px] hover:bg-slate-700 hover:rounded-full cursor-pointer hidden md:block lg:block"
             width="36"
             height="36"
             viewBox="0 0 36 36"
@@ -71,22 +92,141 @@
             />
           </svg>
           <button
-            class="ml-[22px] bg-gray-900 px-4 py-1.5 hover:bg-gray-700 rounded-xl text-gray-50 md:text-[14px] lg:text-[16px]"
+            id="buttonCv"
+            class="ml-[22px] bg-gray-900 px-4 py-1.5 hover:bg-gray-700 rounded-xl text-gray-50 hidden md:block md:text-[14px] lg:block lg:text-[16px] textTitle"
           >
             Download CV
           </button>
         </div>
+        <div class="md:hidden lg:hidden">
+          <svg
+            id="toggleMenu"
+            class="w-[30px] h-[30px]"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+          </svg>
+        </div>
       </div>
     </nav>
 
+    <!-- sidebar -->
+    <div
+      id="containerSidebar"
+      class="fixed bg-sidebar inset-0 z-20 transition-all duration-[600ms] -translate-x-full md:hidden lg:hidden"
+    >
+      <div class="bg-white h-full w-3/5">
+        <div
+          class="flex items-center justify-between border-b-2 px-[18px] py-[18px]"
+        >
+          <h1 class="font-bold text-[24px]">Lutfan hadi</h1>
+          <svg
+            id="toggleClose"
+            class="w-[30px]"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"
+            ></path>
+          </svg>
+        </div>
+        <div>
+          <ul class="px-[18px] flex flex-col gap-[16px] py-[16px] border-b-2">
+            <li>
+              <a class="text-gray-600 hover:text-gray-900" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-900" href="#about"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-900" href="#work">Work</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-900" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center justify-between px-[18px] py-[22px]">
+          <h2>Switch Theme</h2>
+          <svg
+            class="w-[30px]"
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 9C16.8065 10.1935 16.136 11.8122 16.136 13.5C16.136 15.1878 16.8065 16.8065 18 18C19.1935 19.1935 20.8122 19.864 22.5 19.864C24.1878 19.864 25.8065 19.1935 27 18C27 19.78 26.4722 21.5201 25.4832 23.0001C24.4943 24.4802 23.0887 25.6337 21.4442 26.3149C19.7996 26.9961 17.99 27.1743 16.2442 26.8271C14.4984 26.4798 12.8947 25.6226 11.636 24.364C10.3774 23.1053 9.5202 21.5016 9.17294 19.7558C8.82567 18.01 9.0039 16.2004 9.68509 14.5558C10.3663 12.9113 11.5198 11.5057 12.9999 10.5168C14.4799 9.52784 16.22 9 18 9Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M25 9V13"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M27 11H23"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <button
+          class="bg-gray-900 w-fit px-[80px] py-[6px] rounded-xl text-white mx-[16px]"
+        >
+          Download CV
+        </button>
+      </div>
+    </div>
+
     <main>
       <!-- home -->
-      <section id="home" class="h-[552px] md:mx-[70px] lg:mx-[112px]">
-        <div class="flex justify-between pt-[96px]">
-          <div>
-            <h1 class="font-bold md:text-[35px] lg:text-[40px]">Hi, I’m Lutfan Hadi👋</h1>
-            <h1 class="font-bold md:text-[35px] lg:text-[40px]">Frontend Developer</h1>
-            <p class=" mt-[8px] text-justify md:w-[460px] md:text-[14px] md:leading-6 lg:w-[35rem] lg:text-[16px] lg:leading-7">
+      <section
+        id="home"
+        class="h-[852px] mx-[20px] md:mx-[70px] md:h-[552px] lg:mx-[112px] lg:h-[564px]"
+      >
+        <div
+          class="pt-[64px] md:flex md:justify-between md:pt-[96px] lg:flex lg:justify-between lg:pt-[96px] text"
+        >
+          <div
+            class="relative mt-[20px] bg-gray-200 w-[280px] h-[270px] mx-auto md:hidden lg:hidden"
+          >
+            <div
+              class="absolute bg-white left-[20px] bottom-[20px] w-[240px] h-[280px]"
+            >
+              <img
+                class="p-[10px] w-[240px] h-[280px]"
+                src="./assets/img/img-porto.png"
+                alt="gambar profil portofolio"
+              />
+            </div>
+          </div>
+          <div class="mt-[48px] md:mt-0 lg:mt-0">
+            <h1 class="font-bold text-[36px] md:text-[35px] lg:text-[40px]">
+              Hi, I’m Lutfan Hadi👋
+            </h1>
+            <h1 class="font-bold text-[36px] md:text-[35px] lg:text-[40px]">
+              Frontend Developer
+            </h1>
+            <p
+              class="mt-[8px] text-justify md:w-[460px] text-[16px] leading-6 md:text-[14px] md:leading-6 lg:w-[35rem] lg:text-[16px] lg:leading-7 text"
+            >
               Saya seorang frontend developer yang berfokus menciptakan
               pengalaman digital yang cepat, responsif, menarik secara visual,
               dan mudah diakses. Dengan keahlian dalam HTML, CSS, dan
@@ -97,7 +237,7 @@
             <div class="flex gap-1 mt-[30px]">
               <a href="https://github.com/Lutfanhadi">
                 <svg
-                  class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                  class="cursor-pointer w-[30px] md:w-[32px] lg:w-[36px]"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -109,7 +249,7 @@
               </a>
               <a href="https://www.linkedin.com/in/lutfan-hadi/">
                 <svg
-                  class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                  class="cursor-pointer w-[30px] md:w-[32px] lg:w-[36px]"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -121,7 +261,7 @@
               </a>
               <a href="https://www.instagram.com/lutfanhadi05/">
                 <svg
-                  class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                  class="cursor-pointer w-[30px] md:w-[32px] lg:w-[36px]"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -133,14 +273,16 @@
               </a>
             </div>
           </div>
-          <div class="relative mt-[25px] bg-gray-200 md:w-[260px] md:h-[300px] lg:w-[280px] lg:h-[320px]">
+          <div
+            class="relative mt-[25px] bg-gray-200 hidden md:w-[260px] md:h-[300px] md:block lg:w-[280px] lg:h-[320px] lg:block"
+          >
             <div
               class="absolute bg-white bottom-[40px] right-[40px] md:w-[260px] md:h-[300px] lg:w-[280px] lg:h-[320px]"
             >
               <img
                 class="p-[10px]"
                 src="./assets/img/img-porto.png"
-                alt="gambar biodata portofolio"
+                alt="gambar profil portofolio"
               />
             </div>
           </div>
@@ -148,32 +290,44 @@
       </section>
 
       <!-- about me -->
-      <section id="about" class="bg-gray-50 md:h-[892px] lg:h-[822px]">
-        <div class="mt-[96px] md:mx-[70px] lg:mx-[112px]">
-          <div class="pt-[96px]">
+      <section
+        id="about"
+        class="bg-gray-50 h-[1270px] md:h-[892px] lg:h-[822px] containerSection"
+      >
+        <div class="mx-[20px] md:mx-[70px] lg:mx-[112px] text">
+          <div class="pt-[64px] md:pt-[96px] lg:pt-[96px]">
             <h1
-              class="py-[4px] px-[20px] font-medium mx-auto rounded-[12px] w-fit bg-gray-200 md:text-[14px] lg:text-[14px]"
+              id="bgTitle"
+              class="py-[4px] px-[20px] font-medium mx-auto rounded-[12px] w-fit bg-gray-200 text-[14px] text bgTitle"
             >
               About me
             </h1>
           </div>
-          <div class="pt-[48px] flex justify-between h-[600px]">
-            <div class="relative mt-[50px] bg-gray-200 md:w-[360px] md:h-[440px] lg:w-[400px] lg:h-[480px]">
+          <div
+            class="justify-between h-[600px] md:flex md:pt-[48px] lg:flex lg:pt-[48px]"
+          >
+            <div
+              class="relative mt-[50px] mx-auto bg-gray-200 w-[320px] h-[360px] md:w-[360px] md:h-[440px] md:mx-0 lg:w-[400px] lg:h-[480px] lg:mx-0"
+            >
               <div
-                class="absolute bottom-[40px] left-[40px] bg-white md:w-[360px] md:h-[440px] lg:w-[400px] lg:h-[480px]"
+                class="absolute bottom-[20px] left-[20px] bg-white w-[280px] h-[360px] md:w-[360px] md:h-[440px] md:bottom-[40px] md:left-[40px] lg:w-[400px] lg:h-[480px] lg:bottom-[40px] lg:left-[40px]"
               >
                 <img
-                  class="p-[10px] md:w-[360px] md:h-[440px] lg:w-[400px] lg:h-[480px]"
+                  class="p-[10px] w-[280px] h-[360px] md:w-[360px] md:h-[440px] lg:w-[400px] lg:h-[480px]"
                   src="./assets/img/img-aboutme.png"
                   alt="gambar about me"
                 />
               </div>
             </div>
-            <div class="md:w-[400px] lg:w-[584px]">
-              <h1 class="font-semibold mb-[24px] md:text-[28px] lg:text-[30px]">
+            <div class="mt-[48px] md:w-[400px] md:mt-0 lg:w-[584px] lg:mt-0">
+              <h1
+                class="font-semibold mb-[24px] text-[24px] md:text-[28px] lg:text-[30px]"
+              >
                 Curious about me? Here you have it:
               </h1>
-              <div class="flex flex-col gap-[16px] text-justify md:text-[14px] md:leading-6 lg:text-[16px] lg:leading-7">
+              <div
+                class="flex flex-col gap-[16px] text-justify text-[16px] leading-6 md:text-[14px] md:leading-6 lg:text-[16px] lg:leading-7"
+              >
                 <p>
                   Saya adalah seorang mahasiswa di STMIK IKMI Cirebon yang
                   memiliki minat besar dalam pengembangan antarmuka pengguna
@@ -198,7 +352,8 @@
                   frontend.
                 </p>
                 <p>
-                  Mari terhubung untuk berbagi wawasan dan menciptakan inovasi bersama!
+                  Mari terhubung untuk berbagi wawasan dan menciptakan inovasi
+                  bersama!
                 </p>
               </div>
             </div>
@@ -208,23 +363,25 @@
 
       <!-- skills -->
       <section>
-        <div class="mt-[96px] h-[250px] md:mx-[70px] lg:mx-[112px]">
+        <div
+          class="mt-[64px] h-[440px] mx-[20px] md:h-[250px] md:mx-[70px] md:mt-[96px] lg:h-[250px] lg:mx-[112px] lg:mt-[96px] text"
+        >
           <div class="text-center mb-[48px]">
             <h1
-              class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] md:text-[14px] lg:text-[14px]"
+              class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] text-[14px] text bgTitle"
             >
               skill
             </h1>
-            <p class="text-normal md:text-[18px] lg:text-[20px]">
+            <p class="text-normal text-[18px] md:text-[18px] lg:text-[20px]">
               The skills, tools and technologies I am really good at:
             </p>
           </div>
           <div
-            class="flex justify-center font-normal text-center md:text-[14px] md:gap-[40px] lg:text-[18px] lg:gap-[60px]"
+            class="grid grid-cols-3 w-fit gap-4 mx-auto justify-center font-normal text-center md:text-[14px] md:gap-[40px] md:flex lg:text-[18px] lg:gap-[60px] lg:flex"
           >
-            <div>
+            <div class="w-[90px] lg:w-[100px]">
               <svg
-                class="md:w-[80px] lg:w-[100px]"
+                class="w-[64px] mx-auto md:w-[80px] lg:w-[100px]"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -248,9 +405,9 @@
               </svg>
               <h1>Html 5</h1>
             </div>
-            <div>
+            <div class="w-[90px] lg:w-[100px]">
               <svg
-                class="md:w-[80px] lg:w-[100px]"
+                class="w-[64px] mx-auto md:w-[80px] lg:w-[100px]"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -274,9 +431,9 @@
               </svg>
               <h1>Css</h1>
             </div>
-            <div>
+            <div class="w-[90px] lg:w-[100px]">
               <svg
-                class="md:w-[80px] lg:w-[100px]"
+                class="w-[64px] mx-auto md:w-[80px] lg:w-[100px]"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -292,9 +449,9 @@
               </svg>
               <h1>Javascript</h1>
             </div>
-            <div>
+            <div class="w-[90px] lg:w-[100px]">
               <svg
-                class="md:w-[80px] lg:w-[100px]"
+                class="w-[64px] mx-auto md:w-[80px] lg:w-[100px]"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -309,9 +466,9 @@
               </svg>
               <h1>Tailwindcss</h1>
             </div>
-            <div>
+            <div class="w-[90px] lg:w-[100px]">
               <svg
-                class="md:w-[80px] lg:w-[100px]"
+                class="w-[64px] mx-auto md:w-[80px] lg:w-[100px]"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -339,9 +496,9 @@
               </svg>
               <h1>Figma</h1>
             </div>
-            <div>
+            <div class="w-[90px] lg:w-[100px]">
               <svg
-                class="md:w-[80px] lg:w-[100px]"
+                class="w-[64px] mx-auto md:w-[80px] lg:w-[100px]"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -361,32 +518,102 @@
       </section>
 
       <!-- work -->
-      <section id="work" class="bg-gray-50 md:h-[1400px] lg:h-[1600px]">
-        <div class="mt-[96px] md:mx-[70px] lg:mx-[112px]">
-          <div class="text-center mb-[48px] pt-[98px]">
+      <section
+        id="work"
+        class="bg-gray-50 h-[2140px] md:h-[1350px] lg:h-[1600px] containerSection"
+      >
+        <div
+          class="mx-[20px] mt-[0px] md:mx-[70px] md:mt-[96px] lg:mx-[112px] lg:mt-[96px] text"
+        >
+          <div
+            class="text-center mb-[48px] pt-[64px] md:pt-[96px] lg:pt-[96px]"
+          >
             <h1
-              class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] md:text-[14px] lg:text-[14px]"
+              class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] text-[14px] text bgTitle"
             >
               Work
             </h1>
-            <p class="text-normal md:text-[18px] lg:text-[20px]">
+            <p class="text-normal text-[18px] md:text-[18px] lg:text-[20px]">
               Some of the noteworthy projects I have built:
             </p>
           </div>
-
+          <!-- card dekstop and tablet -->
           <div
-            class="flex justify-between bg-white rounded-[12px] drop-shadow-md md:h-[305px] md:p-[40px] lg:h-[380px] lg:p-[48px]"
+            class="justify-between bg-white rounded-[12px] drop-shadow-md md:h-[305px] md:p-[40px] md:flex lg:h-[380px] lg:p-[48px] lg:flex card2"
           >
-            <div>
+            <div class="p-[32px] md:p-0 lg:p-0">
               <img
-                class="rounded-[12px] md:w-[370px] lg:w-[480px]"
+                class="rounded-[12px] w-full md:w-[370px] lg:w-[480px]"
                 src="./assets/img/img-work1.png"
                 alt="gambar proyek 1"
               />
             </div>
-            <div class="md:w-[370px] lg:w-[480px]">
-              <h1 class="font-semibold md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]">Edufree</h1>
-              <p class="font-normal text-justify md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]">
+            <div class="px-[32px] md:w-[370px] md:px-0 lg:w-[480px] lg:px-0">
+              <h1
+                class="font-semibold text-[18px] mb-[24px] md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]"
+              >
+                Edufree
+              </h1>
+              <p
+                class="font-normal text-justify text-[16px] leading-6 mb-[24px] md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam deserunt aliquam accusamus totam laboriosam doloremque,
+                voluptatem iure natus exercitationem quibusdam.
+              </p>
+              <div class="flex gap-[8px]">
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
+                >
+                  Html
+                </p>
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
+                >
+                  Css
+                </p>
+                <p
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
+                >
+                  Tailwindcss
+                </p>
+              </div>
+              <div>
+                <a href="https://lutfanhadi.github.io/Web-Edufree/">
+                  <svg
+                    class="w-[24px] cursor-pointer mt-[24px] pb-[32px] md:mt-0 md:pb-0 lg:mt-[30px] lg:pb-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- card hp -->
+          <div
+            class="justify-between bg-white rounded-[12px] block mt-[48px] drop-shadow-md md:hidden lg:hidden"
+          >
+            <div class="p-[32px] md:p-0 lg:p-0">
+              <img
+                class="rounded-[12px] w-full md:w-[370px] lg:w-[480px]"
+                src="./assets/img/img-work1.png"
+                alt="gambar proyek 1"
+              />
+            </div>
+            <div class="px-[32px] md:w-[370px] md:px-0 lg:w-[480px] lg:px-0">
+              <h1
+                class="font-semibold text-[18px] mb-[24px] md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]"
+              >
+                Edufree
+              </h1>
+              <p
+                class="font-normal text-justify text-[16px] leading-6 mb-[24px] md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam deserunt aliquam accusamus totam laboriosam doloremque,
                 voluptatem iure natus exercitationem quibusdam.
@@ -411,7 +638,7 @@
               <div>
                 <a href="https://lutfanhadi.github.io/Web-Edufree/">
                   <svg
-                    class="w-[24px] cursor-pointer md:mt-0 lg:mt-[30px]"
+                    class="w-[24px] cursor-pointer mt-[24px] pb-[32px] md:mt-0 md:pb-0 lg:mt-[30px] lg:pb-0"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -424,30 +651,36 @@
               </div>
             </div>
           </div>
-
+          <!-- card dekstop and tablet -->
           <div
-            class="flex justify-between bg-white rounded-[12px] drop-shadow-md mt-[48px] md:h-[305px] md:p-[40px] lg:h-[380px] lg:p-[48px]"
+            class="justify-between hidden bg-white rounded-[12px] drop-shadow-md mt-[48px] md:h-[305px] md:p-[40px] md:flex lg:h-[380px] lg:p-[48px] lg:flex card2"
           >
             <div class="md:w-[370px] lg:w-[480px]">
-              <h1 class="font-semibold md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]">Edufree</h1>
-              <p class="font-normal text-justify md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]">
+              <h1
+                class="font-semibold md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]"
+              >
+                Edufree
+              </h1>
+              <p
+                class="font-normal text-justify md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam deserunt aliquam accusamus totam laboriosam doloremque,
                 voluptatem iure natus exercitationem quibusdam.
               </p>
               <div class="flex gap-[8px]">
                 <p
-                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px]"
+                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] bgTitle"
                 >
                   Html
                 </p>
                 <p
-                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px]"
+                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] bgTitle"
                 >
                   Css
                 </p>
                 <p
-                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px]"
+                  class="font-medium text-[14px] mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] bgTitle"
                 >
                   Tailwindcss
                 </p>
@@ -475,45 +708,51 @@
               />
             </div>
           </div>
-
+          <!-- card dekstop and tablet -->
           <div
-            class="flex justify-between bg-white rounded-[12px] mt-[48px] drop-shadow-md md:h-[305px] md:p-[40px] lg:h-[380px] lg:p-[48px]"
+            class="justify-between bg-white rounded-[12px] mt-[48px] drop-shadow-md md:h-[305px] md:p-[40px] md:flex lg:h-[380px] lg:p-[48px] lg:flex card2"
           >
-            <div>
+            <div class="p-[32px] md:p-0 lg:p-0">
               <img
-                class="rounded-[12px] md:w-[370px] lg:w-[480px]"
+                class="rounded-[12px] w-full md:w-[370px] lg:w-[480px]"
                 src="./assets/img/img-work1.png"
                 alt="gambar proyek 1"
               />
             </div>
-            <div class="md:w-[370px] lg:w-[480px]">
-              <h1 class="font-semibold md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]">Edufree</h1>
-              <p class="font-normal text-justify md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]">
+            <div class="px-[32px] md:w-[370px] md:px-0 lg:w-[480px] lg:px-0">
+              <h1
+                class="font-semibold text-[18px] mb-[24px] md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]"
+              >
+                Edufree
+              </h1>
+              <p
+                class="font-normal text-justify text-[16px] leading-6 mb-[24px] md:text-[14px] md:leading-6 md:mb-[10px] lg:text-[16px] lg:leading-7 lg:mb-[24px]"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam deserunt aliquam accusamus totam laboriosam doloremque,
                 voluptatem iure natus exercitationem quibusdam.
               </p>
               <div class="flex gap-[8px]">
                 <p
-                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
                 >
                   Html
                 </p>
                 <p
-                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
                 >
                   Css
                 </p>
                 <p
-                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
                 >
                   Tailwindcss
                 </p>
               </div>
               <div>
-                <a href="">
+                <a href="https://lutfanhadi.github.io/Web-Edufree/">
                   <svg
-                    class="w-[24px] cursor-pointer md:mt-0 lg:mt-[30px]"
+                    class="w-[24px] cursor-pointer mt-[24px] pb-[32px] md:mt-0 md:pb-0 lg:mt-[30px] lg:pb-0"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
@@ -531,21 +770,21 @@
 
       <!-- contact -->
       <section id="contact">
-        <div class="text-center mt-[96px]">
+        <div class="text-center mt-[64px] md:mt-[96px] lg:mt-[96px] text">
           <h1
-            class="mb-[16px] font-medium py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] md:text-[14px] lg:text-[14px]"
+            class="mb-[16px] font-medium py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] text-[14px] text bgTitle"
           >
             Get in touch
           </h1>
           <p
-            class="w-[576px] mx-auto mb-[48px] font-normal md:text-[18px] md:leading-6 lg:text-[20px] lg:leading-7 "
+            class="w-[343px] mx-auto mb-[48px] font-normal text-[20px] leading-6 md:text-[18px] md:leading-6 md:w-[576px] lg:text-[20px] lg:leading-7 lg:w-[576px]"
           >
             What’sGet in touch next? Feel free to reach out to me if you're
             looking for a developer, have a query, or simply want to connect.
           </p>
           <div class="flex items-center gap-[18px] justify-center mb-[16px]">
             <svg
-              class="md:w-[24px] lg:w-[27px]"
+              class="w-[20px] md:w-[24px] lg:w-[27px]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -554,11 +793,13 @@
                 d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"
               ></path>
             </svg>
-            <p class="font-semibold md:text-[28px] lg:text-[30px]">lutfanhadi03@gmail.com</p>
+            <p class="font-semibold text-[18px] md:text-[28px] lg:text-[30px]">
+              lutfanhadi03@gmail.com
+            </p>
           </div>
           <div class="flex items-center gap-[18px] justify-center mb-[48px]">
             <svg
-              class="md:w-[27px] lg:w-[30px]"
+              class="w-[24px] md:w-[27px] lg:w-[30px]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -567,15 +808,19 @@
                 d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"
               ></path>
             </svg>
-            <p class="font-semibold md:text-[28px] lg:text-[30px]">+62 895357853685</p>
+            <p class="font-semibold text-[18px md:text-[28px] lg:text-[30px]">
+              +62 895357853685
+            </p>
           </div>
-          <p class="mb-[8px] font-normal md:text-[14px] lg:text-[16px]">
+          <p
+            class="mb-[8px] font-normal text-[16px] md:text-[14px] lg:text-[16px]"
+          >
             You may also find me on these platforms!
           </p>
           <div class="flex items-center justify-center gap-1 mb-[96px]">
             <a href="https://github.com/Lutfanhadi">
               <svg
-                class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                class="cursor-pointer w-[24px] md:w-[32px] lg:w-[36px]"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -587,7 +832,7 @@
             </a>
             <a href="https://www.linkedin.com/in/lutfan-hadi/">
               <svg
-                class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                class="cursor-pointer w-[24px] md:w-[32px] lg:w-[36px]"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -599,7 +844,7 @@
             </a>
             <a href="https://www.instagram.com/lutfanhadi05/">
               <svg
-                class="cursor-pointer md:w-[32px] lg:w-[36px]"
+                class="cursor-pointer w-[24px] md:w-[32px] lg:w-[36px]"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -614,7 +859,9 @@
       </section>
     </main>
     <footer>
-      <h1 class="font-normal bg-gray-50 text-center md:text-[12px] md:py-[20px] lg:text-[14px] lg:py-[24px]">
+      <h1
+        class="font-normal bg-gray-50 text-center text-[14px] py-[24px] md:text-[12px] md:py-[20px] lg:text-[14px] lg:py-[24px] text containerSection"
+      >
         &copy;Copyright 2025. All Rights Reserved
       </h1>
     </footer>

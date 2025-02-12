@@ -5,8 +5,11 @@ module.exports = {
     fontFamily: {
       inter: ["Inter", "serif"],
     },
+    colors: {
+      sidebar: "#81888fC7",
+      dark: "#030712",
+    },
     extend: {},
   },
   plugins: [],
 };
-
