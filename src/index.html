@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web portofolio</title>
+    <title>Portfolio | Lutfan Hadi</title>
     <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/output.css" />
@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
   </head>
-     <body
+  <body
     id="containerDarkMode"
     class="font-inter w-[500px] md:w-[1000px] lg:w-[1349px] mx-auto"
   >
@@ -32,30 +32,22 @@
             class="items-center gap-6 font-medium border-r-2 border-gray-200 pr-[24px] py-[2px] hidden md:flex md:text-[14px] lg:flex lg:text-[16px] text"
           >
             <li>
-              <a
-                class="text-gray-600 dark:hover:text-black"
-                href="#home"
+              <a class="text-gray-600 dark:hover:text-black" href="#home"
                 >Home</a
               >
             </li>
             <li>
-              <a
-                class="text-gray-600 dark:hover:text-black"
-                href="#about"
+              <a class="text-gray-600 dark:hover:text-black" href="#about"
                 >About Me</a
               >
             </li>
             <li>
-              <a
-                class="text-gray-600 dark:hover:text-black"
-                href="#work"
+              <a class="text-gray-600 dark:hover:text-black" href="#work"
                 >Work</a
               >
             </li>
             <li>
-              <a
-                class="text-gray-600 dark:hover:text-black"
-                href="#contact"
+              <a class="text-gray-600 dark:hover:text-black" href="#contact"
                 >Contact</a
               >
             </li>
@@ -92,8 +84,7 @@
             />
           </svg>
           <button
-            id="buttonCv"
-            class="ml-[22px] bg-gray-900 px-4 py-1.5 hover:bg-gray-700 rounded-xl text-gray-50 hidden md:block md:text-[14px] lg:block lg:text-[16px] textTitle"
+            class="ml-[22px] bg-gray-900 px-4 py-1.5 dark:hover:bg-gray-600 rounded-xl text-gray-50 hidden md:block md:text-[14px] lg:block lg:text-[16px] textTitle hoverBg buttonCv"
           >
             Download CV
           </button>
@@ -101,7 +92,7 @@
         <div class="md:hidden lg:hidden">
           <svg
             id="toggleMenu"
-            class="w-[30px] h-[30px]"
+            class="w-[30px] h-[30px] text"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
@@ -115,9 +106,9 @@
     <!-- sidebar -->
     <div
       id="containerSidebar"
-      class="fixed bg-sidebar inset-0 z-20 transition-all duration-[600ms] -translate-x-full md:hidden lg:hidden"
+      class="fixed bg-sidebar inset-0 z-20 transition-all duration-[600ms] -translate-x-full md:hidden lg:hidden bgSidebar"
     >
-      <div class="bg-white h-full w-3/5">
+      <div class="bg-white h-full w-3/5 card1 text">
         <div
           class="flex items-center justify-between border-b-2 px-[18px] py-[18px]"
         >
@@ -157,7 +148,8 @@
         <div class="flex items-center justify-between px-[18px] py-[22px]">
           <h2>Switch Theme</h2>
           <svg
-            class="w-[30px]"
+            id="toggleDarkModeHp"
+            class="w-[30px] toggleDarkMode"
             width="36"
             height="36"
             viewBox="0 0 36 36"
@@ -188,7 +180,7 @@
           </svg>
         </div>
         <button
-          class="bg-gray-900 w-fit px-[80px] py-[6px] rounded-xl text-white mx-[16px]"
+          class="bg-gray-900 w-fit px-[80px] py-[6px] rounded-xl text-white mx-[16px] textTitle buttonCv"
         >
           Download CV
         </button>
@@ -205,10 +197,10 @@
           class="pt-[64px] md:flex md:justify-between md:pt-[96px] lg:flex lg:justify-between lg:pt-[96px] text"
         >
           <div
-            class="relative mt-[20px] bg-gray-200 w-[280px] h-[270px] mx-auto md:hidden lg:hidden"
+            class="relative mt-[20px] bg-gray-200 w-[280px] h-[270px] mx-auto md:hidden lg:hidden bgTitle"
           >
             <div
-              class="absolute bg-white left-[20px] bottom-[20px] w-[240px] h-[280px]"
+              class="absolute bg-white left-[20px] bottom-[20px] w-[240px] h-[280px] card1"
             >
               <img
                 class="p-[10px] w-[240px] h-[280px]"
@@ -274,10 +266,10 @@
             </div>
           </div>
           <div
-            class="relative mt-[25px] bg-gray-200 hidden md:w-[260px] md:h-[300px] md:block lg:w-[280px] lg:h-[320px] lg:block"
+            class="relative mt-[25px] bg-gray-200 hidden md:w-[260px] md:h-[300px] md:block lg:w-[280px] lg:h-[320px] lg:block bgTitle"
           >
             <div
-              class="absolute bg-white bottom-[40px] right-[40px] md:w-[260px] md:h-[300px] lg:w-[280px] lg:h-[320px]"
+              class="absolute bg-white bottom-[40px] right-[40px] md:w-[260px] md:h-[300px] lg:w-[280px] lg:h-[320px] card1"
             >
               <img
                 class="p-[10px]"
@@ -297,7 +289,6 @@
         <div class="mx-[20px] md:mx-[70px] lg:mx-[112px] text">
           <div class="pt-[64px] md:pt-[96px] lg:pt-[96px]">
             <h1
-              id="bgTitle"
               class="py-[4px] px-[20px] font-medium mx-auto rounded-[12px] w-fit bg-gray-200 text-[14px] text bgTitle"
             >
               About me
@@ -307,10 +298,10 @@
             class="justify-between h-[600px] md:flex md:pt-[48px] lg:flex lg:pt-[48px]"
           >
             <div
-              class="relative mt-[50px] mx-auto bg-gray-200 w-[320px] h-[360px] md:w-[360px] md:h-[440px] md:mx-0 lg:w-[400px] lg:h-[480px] lg:mx-0"
+              class="relative mt-[50px] mx-auto bg-gray-200 w-[320px] h-[360px] md:w-[360px] md:h-[440px] md:mx-0 lg:w-[400px] lg:h-[480px] lg:mx-0 bgTitle"
             >
               <div
-                class="absolute bottom-[20px] left-[20px] bg-white w-[280px] h-[360px] md:w-[360px] md:h-[440px] md:bottom-[40px] md:left-[40px] lg:w-[400px] lg:h-[480px] lg:bottom-[40px] lg:left-[40px]"
+                class="absolute bottom-[20px] left-[20px] bg-white w-[280px] h-[360px] md:w-[360px] md:h-[440px] md:bottom-[40px] md:left-[40px] lg:w-[400px] lg:h-[480px] lg:bottom-[40px] lg:left-[40px] containerSection"
               >
                 <img
                   class="p-[10px] w-[280px] h-[360px] md:w-[360px] md:h-[440px] lg:w-[400px] lg:h-[480px]"
@@ -596,7 +587,7 @@
           </div>
           <!-- card hp -->
           <div
-            class="justify-between bg-white rounded-[12px] block mt-[48px] drop-shadow-md md:hidden lg:hidden"
+            class="justify-between bg-white rounded-[12px] block mt-[48px] drop-shadow-md md:hidden lg:hidden card2"
           >
             <div class="p-[32px] md:p-0 lg:p-0">
               <img
@@ -620,17 +611,17 @@
               </p>
               <div class="flex gap-[8px]">
                 <p
-                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
                 >
                   Html
                 </p>
                 <p
-                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
                 >
                   Css
                 </p>
                 <p
-                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px]"
+                  class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit rounded-[12px] md:text-[12px] lg:text-[14px] bgTitle"
                 >
                   Tailwindcss
                 </p>
