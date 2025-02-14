@@ -75,8 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
         containerSidebar.style.background = "#333338C7";
 
 
-
-
         for(let valueText = 0 ; valueText < text.length ; valueText++){
             text[valueText].style.color = "white";
         }
@@ -161,9 +159,6 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
-
-
-console.log(localStorage)
 
 
 
