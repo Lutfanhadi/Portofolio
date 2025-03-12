@@ -14,10 +14,7 @@
       rel="stylesheet"
     />
   </head>
-  <body
-    id="containerDarkMode"
-    class="font-inter lg:max-w-[1349px] mx-auto"
-  >
+  <body id="containerDarkMode" class="font-inter lg:max-w-[1349px] mx-auto">
     <nav id="containerNav" class="sticky top-0 z-10 bg-white card1">
       <div
         class="flex items-center justify-between py-4 mx-[20px] md:mx-[70px] lg:mx-[112px]"
@@ -29,7 +26,7 @@
         </div>
         <div class="flex items-center">
           <ul
-            class="items-center gap-6 font-medium border-r-2 border-gray-200 pr-[24px] py-[2px] hidden md:flex md:text-[14px] lg:flex lg:text-[16px] text"
+            class="items-center gap-6 font-medium border-r-2 border-gray-200 pr-[24px] py-[2px] hidden md:hidden md:text-[14px] lg:flex lg:text-[16px] text"
           >
             <li>
               <a class="text-gray-600 dark:hover:text-black" href="#home"
@@ -54,7 +51,7 @@
           </ul>
           <svg
             id="toggleDarkMode"
-            class="ml-[22px] hover:bg-slate-700 hover:rounded-full cursor-pointer hidden md:block lg:block"
+            class="ml-[22px] hover:bg-slate-700 hover:rounded-full cursor-pointer hidden md:hidden lg:block"
             width="36"
             height="36"
             viewBox="0 0 36 36"
@@ -84,12 +81,12 @@
             />
           </svg>
           <button
-            class="ml-[22px] bg-gray-900 px-4 py-1.5 dark:hover:bg-gray-600 rounded-xl text-gray-50 hidden md:block md:text-[14px] lg:block lg:text-[16px] textTitle hoverBg buttonCv"
+            class="ml-[22px] bg-gray-900 px-4 py-1.5 dark:hover:bg-gray-600 rounded-xl text-gray-50 hidden md:hidden md:text-[14px] lg:block lg:text-[16px] textTitle hoverBg buttonCv"
           >
             Download CV
           </button>
         </div>
-        <div class="md:hidden lg:hidden">
+        <div class="lg:hidden">
           <svg
             id="toggleMenu"
             class="w-[30px] h-[30px] text"
@@ -106,9 +103,9 @@
     <!-- sidebar -->
     <div
       id="containerSidebar"
-      class="fixed bg-sidebar inset-0 z-20 transition-all duration-[600ms] -translate-x-full md:hidden lg:hidden bgSidebar"
+      class="fixed bg-sidebar inset-0 z-20 transition-all duration-[600ms] -translate-x-full lg:hidden bgSidebar"
     >
-      <div class="bg-white h-full w-3/5 card1 text">
+      <div class="bg-white h-full w-3/5 md:w-2/5 card1 text">
         <div
           class="flex items-center justify-between border-b-2 px-[18px] py-[18px]"
         >
@@ -179,22 +176,19 @@
             />
           </svg>
         </div>
-          <button
-            class="block mx-auto bg-gray-900 px-[50px] py-[6px] rounded-xl text-white textTitle buttonCv"
-          >
-            Download CV
-          </button>
+        <button
+          class="block mx-auto bg-gray-900 px-[50px] py-[6px] rounded-xl text-white textTitle buttonCv"
+        >
+          Download CV
+        </button>
       </div>
     </div>
 
     <main>
       <!-- home -->
-      <section
-        id="home"
-        class="h-[760px] mx-[20px] md:mx-[70px] md:h-[552px] lg:mx-[112px] lg:h-[564px]"
-      >
+      <section id="home" class="h-fit mx-[20px] md:mx-[70px] lg:mx-[112px]">
         <div
-          class="pt-[30px] md:flex md:justify-between md:pt-[96px] lg:flex lg:justify-between lg:pt-[96px] text"
+          class="py-10 md:flex md:justify-between md:py-24 lg:flex lg:justify-between text"
         >
           <div
             class="relative mt-[20px] bg-gray-200 w-[280px] h-[270px] mx-auto md:hidden lg:hidden bgTitle"
@@ -217,13 +211,12 @@
               Frontend Developer
             </h1>
             <p
-              class="mt-[8px] text-justify md:w-[460px] text-[16px] leading-6 md:text-[14px] md:leading-6 lg:w-[35rem] lg:text-[16px] lg:leading-7 text"
+              class="mt-[8px] text-justify md:w-[390px] text-[16px] leading-6 md:text-[14px] md:leading-6 lg:w-[35rem] lg:text-[16px] lg:leading-7 text"
             >
-              Saya seorang frontend developer yang berfokus menciptakan
-              pengalaman digital yang cepat, responsif, menarik secara visual,
-              dan mudah diakses. Dengan keahlian dalam HTML, CSS, dan
-              JavaScript, saya menghadirkan desain yang tidak hanya estetis
-              tetapi juga fungsional.
+              I am a frontend developer focused on creating fast, responsive,
+              visually appealing, and accessible digital experiences. With
+              expertise in HTML, CSS, and JavaScript, I deliver designs that are
+              not only aesthetic but also functional.
             </p>
 
             <div class="flex gap-1 mt-[30px]">
@@ -266,10 +259,10 @@
             </div>
           </div>
           <div
-            class="relative mt-[25px] bg-gray-200 hidden md:w-[260px] md:h-[300px] md:block lg:w-[280px] lg:h-[320px] lg:block bgTitle"
+            class="relative mt-[25px] bg-gray-200 hidden md:w-[200px] md:h-[220px] md:block lg:w-[280px] lg:h-[320px] lg:block bgTitle"
           >
             <div
-              class="absolute bg-white md:bottom-[30px] md:right-[30px] md:w-[260px] md:h-[300px] lg:bottom-[40px] lg:right-[40px] lg:w-[280px] lg:h-[320px]  card1"
+              class="absolute bg-white md:bottom-[30px] md:right-[30px] md:w-[200px] md:h-[230px] lg:bottom-[40px] lg:right-[40px] lg:w-[280px] lg:h-[320px] card1"
             >
               <img
                 class="p-[10px]"
@@ -282,12 +275,9 @@
       </section>
 
       <!-- about me -->
-      <section
-        id="about"
-        class="bg-gray-50 h-[1420px] md:h-[892px] lg:h-[822px] containerSection"
-      >
-        <div class="mx-[20px] md:mx-[70px] lg:mx-[112px] text">
-          <div class="pt-[30px] md:pt-[96px] lg:pt-[96px]">
+      <section id="about" class="bg-gray-50 h-fit containerSection">
+        <div class="mx-[20px] py-10 md:py-24 md:mx-[70px] lg:mx-[112px] text">
+          <div class="">
             <h1
               class="py-[4px] px-[20px] font-medium mx-auto rounded-[12px] w-fit bg-gray-200 text-[14px] text bgTitle"
             >
@@ -295,7 +285,7 @@
             </h1>
           </div>
           <div
-            class="justify-between h-[600px] md:flex md:pt-[48px] lg:flex lg:pt-[48px]"
+            class="flex flex-col justify-center items-center md:pt-[48px] lg:flex-row lg:justify-between lg:pt-[48px]"
           >
             <div
               class="relative mt-[50px] mx-auto bg-gray-200 w-[320px] h-[360px] md:w-[360px] md:h-[440px] md:mx-0 lg:w-[400px] lg:h-[480px] lg:mx-0 bgTitle"
@@ -310,9 +300,9 @@
                 />
               </div>
             </div>
-            <div class="mt-[48px] md:w-[400px] md:mt-0 lg:w-[584px] lg:mt-0">
+            <div class="mt-[48px] md:w-full md:mt-[48px] lg:w-[584px] lg:mt-0">
               <h1
-                class="font-semibold mb-[24px] text-[24px] md:text-[28px] lg:text-[30px]"
+                class="font-semibold mb-[24px] text-[24px] md:text-[28px] md:text-center lg:text-[30px] lg:text-start"
               >
                 Curious about me? Here you have it:
               </h1>
@@ -320,31 +310,30 @@
                 class="flex flex-col gap-[16px] text-justify text-[16px] leading-6 md:text-[14px] md:leading-6 lg:text-[16px] lg:leading-7"
               >
                 <p>
-                  Saya adalah seorang mahasiswa di STMIK IKMI Cirebon yang
-                  memiliki minat besar dalam pengembangan antarmuka pengguna
-                  (UI) dan pengalaman pengguna (UX) untuk aplikasi web. Dengan
-                  fokus pada Frontend Development, saya terus membangun keahlian
-                  dalam pemrograman, desain responsif, dan optimalisasi performa
-                  antarmuka.
+                  I am a student at STMIK IKMI Cirebon who has a great interest
+                  in developing user interfaces (UI) and user experiences (UX)
+                  for web applications. With a focus on Frontend Development, I
+                  continue to build expertise in programming, responsive design,
+                  and interface performance optimization.
                 </p>
                 <p>
-                  Saat ini, saya mendalami pengembangan aplikasi berbasis web
-                  menggunakan teknologi seperti HTML, CSS, JavaScript, Tailwind
-                  CSS, dan kerangka kerja modern lainnya. Saya juga memiliki
-                  kemampuan dalam mengintegrasikan antarmuka dengan backend
-                  untuk menciptakan aplikasi yang fungsional dan menarik.
+                  Currently, I am deep into developing web-based applications
+                  using technologies such as HTML, CSS, JavaScript, Tailwind
+                  CSS, and other modern frameworks. I also have the ability to
+                  integrate the interface with the backend to create functional
+                  and attractive applications.
                 </p>
                 <p>
-                  Sebagai mahasiswa yang proaktif, saya selalu mencari peluang
-                  untuk belajar, berinovasi, dan berkontribusi pada
-                  proyek-proyek yang dapat memberikan pengalaman nyata dalam
-                  dunia teknologi informasi. Saya terbuka untuk kolaborasi,
-                  magang, atau peluang kerja sama lainnya di bidang pengembangan
-                  frontend.
+                  As a proactive student, I am always looking for opportunities
+                  to learn, innovate, and contribute to projects that can
+                  provide real-world experience in the world of information
+                  technology. I am open to collaborations, internships, or other
+                  opportunities for collaboration in the field of frontend
+                  development.
                 </p>
                 <p>
-                  Mari terhubung untuk berbagi wawasan dan menciptakan inovasi
-                  bersama!
+                  Let's connect to share insights and create innovations
+                  together!
                 </p>
               </div>
             </div>
@@ -355,7 +344,7 @@
       <!-- skills -->
       <section>
         <div
-          class="mt-[30px] h-[450px] mx-[20px] md:h-[250px] md:mx-[70px] md:mt-[96px] lg:h-[250px] lg:mx-[112px] lg:mt-[96px] text"
+          class="h-fit mx-[20px] py-10 md:mx-[70px] md:py-24 lg:mx-[112px] text"
         >
           <div class="text-center mb-[48px]">
             <h1
@@ -368,7 +357,7 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-3 w-fit gap-4 mx-auto justify-center font-normal text-center md:text-[14px] md:gap-[40px] md:flex lg:text-[18px] lg:gap-[60px] lg:flex"
+            class="grid grid-cols-3 w-fit gap-4 mx-auto justify-center font-normal text-center md:text-[14px] md:gap-[20px] md:flex lg:text-[18px] lg:gap-[60px] lg:flex"
           >
             <div class="w-[90px] lg:w-[100px]">
               <svg
@@ -509,16 +498,9 @@
       </section>
 
       <!-- work -->
-      <section
-        id="work"
-        class="bg-gray-50 h-[2040px] md:h-[1350px] lg:h-[1600px] containerSection"
-      >
-        <div
-          class="mx-[20px] mt-[0px] md:mx-[70px] md:mt-[96px] lg:mx-[112px] lg:mt-[96px] text"
-        >
-          <div
-            class="text-center mb-[48px] pt-[30px] md:pt-[96px] lg:pt-[96px]"
-          >
+      <section id="work" class="bg-gray-50 h-fit containerSection">
+        <div class="mx-[20px] py-10 md:mx-[70px] md:py-24 lg:mx-[112px] text">
+          <div class="text-center mb-[48px]">
             <h1
               class="font-medium mb-[16px] py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] text-[14px] text bgTitle"
             >
@@ -530,7 +512,7 @@
           </div>
           <!-- card dekstop and tablet -->
           <div
-            class="justify-between bg-white rounded-[12px] drop-shadow-md md:h-[305px] md:p-[40px] md:flex lg:h-[380px] lg:p-[48px] lg:flex card2"
+            class="bg-white rounded-[12px] drop-shadow-md md:h-[305px] md:p-[40px] md:flex md:items-center md:gap-5 lg:h-[380px] lg:p-[48px] lg:flex card2"
           >
             <div class="p-[32px] md:p-0 lg:p-0">
               <img
@@ -539,7 +521,7 @@
                 alt="gambar proyek 1"
               />
             </div>
-            <div class="px-[32px] md:w-[370px] md:px-0 lg:w-[480px] lg:px-0">
+            <div class="px-[32px] md:w-[350px] md:px-0 lg:w-[480px] lg:px-0">
               <h1
                 class="font-semibold text-[18px] mb-[18px] md:text-[18px] md:mb-[18px] lg:text-[20px] lg:mb-[24px]"
               >
@@ -644,7 +626,7 @@
           </div>
           <!-- card dekstop and tablet -->
           <div
-            class="justify-between hidden bg-white rounded-[12px] drop-shadow-md mt-[48px] md:h-[305px] md:p-[40px] md:flex lg:h-[380px] lg:p-[48px] lg:flex card2"
+            class="hidden bg-white rounded-[12px] drop-shadow-md mt-[48px] md:h-[305px] md:p-[40px] md:flex md:items-center md:gap-5 lg:h-[380px] lg:p-[48px] lg:flex card2"
           >
             <div class="md:w-[370px] lg:w-[480px]">
               <h1
@@ -701,7 +683,7 @@
           </div>
           <!-- card dekstop and tablet -->
           <div
-            class="justify-between bg-white rounded-[12px] mt-[48px] drop-shadow-md md:h-[305px] md:p-[40px] md:flex lg:h-[380px] lg:p-[48px] lg:flex card2"
+            class="justify-between bg-white rounded-[12px] mt-[48px] drop-shadow-md md:h-[305px] md:p-[40px] md:flex md:items-center md:gap-5 lg:h-[380px] lg:p-[48px] lg:flex card2"
           >
             <div class="p-[32px] md:p-0 lg:p-0">
               <img
@@ -761,7 +743,7 @@
 
       <!-- contact -->
       <section id="contact">
-        <div class="text-center mt-[30px] md:mt-[96px] lg:mt-[96px] text">
+        <div class="text-center py-10 md:py-24 text">
           <h1
             class="mb-[16px] font-medium py-[4px] px-[20px] bg-gray-200 w-fit mx-auto rounded-[12px] text-[14px] text bgTitle"
           >
@@ -808,7 +790,7 @@
           >
             You may also find me on these platforms!
           </p>
-          <div class="flex items-center justify-center gap-1 mb-[50px]">
+          <div class="flex items-center justify-center gap-1">
             <a href="https://github.com/Lutfanhadi">
               <svg
                 class="cursor-pointer w-[24px] md:w-[32px] lg:w-[36px] hover:text-gray-600"
